@@ -3,7 +3,7 @@ function generateNumberCombinations(numbers) {
 
   function generateCombinationsHelper(currentIndex, currentCombination, used) {
       if (currentIndex === numbers.length) {
-          result.push(currentCombination.slice()); // 복사하여 결과에 추가
+          result.push(currentCombination.slice());
           return;
       }
 
@@ -12,7 +12,7 @@ function generateNumberCombinations(numbers) {
               currentCombination.push(numbers[i]);
               used[i] = true;
               generateCombinationsHelper(currentIndex + 1, currentCombination, used);
-              currentCombination.pop(); // 이전 상태로 되돌림
+              currentCombination.pop();
               used[i] = false;
           }
       }
