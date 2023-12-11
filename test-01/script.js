@@ -34,7 +34,7 @@ function multiplyTwoNumbers(number1, number2) {
 }
 
 // 최대값 저장
-let maxProduct = -1;
+let maxProduct = 0;
 let maxNumbers = [];
 
 // 최대값 업데이트
