@@ -32,13 +32,7 @@ const Error = styled.span`
   font-size: 13px;
 `;
 
-function User({
-  counter,
-  onDeleteUser,
-  index,
-  register,
-  formState,
-}) {
+function User({ counter, onDeleteUser, index, register, formState }) {
   return (
     <Wrapper>
       <FormWrap>
