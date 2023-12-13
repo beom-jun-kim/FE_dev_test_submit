@@ -38,7 +38,6 @@ function User({
   index,
   register,
   formState,
-  trigger,
 }) {
   return (
     <Wrapper>
@@ -59,9 +58,6 @@ function User({
           name="name"
           label="Name"
           type="text"
-          onChange={(e) => {
-            trigger(`userBox[${index}].name`);
-          }}
         />
         <Error>{formState.errors[`userBox[${index}].name`]?.message}</Error>
 
@@ -76,9 +72,6 @@ function User({
           name="password"
           label="Password"
           type="password"
-          onChange={(e) => {
-            trigger(`userBox[${index}].password`);
-          }}
         />
         <Error>{formState.errors[`userBox[${index}].password`]?.message}</Error>
       </FormWrap>

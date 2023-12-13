@@ -48,7 +48,7 @@ const SubmitData = styled.p`
 
 function App() {
   const [userBox, setUserBox] = useState([{ name: "", password: "" }]);
-  const { handleSubmit, register, formState, trigger, setError } = useForm();
+  const { handleSubmit, register, formState } = useForm();
   const onAddUser = () => {
     const addForm = [...userBox, { name: "", password: "" }];
     setUserBox(addForm);
@@ -84,7 +84,6 @@ function App() {
               register={register}
               formState={formState}
               userBox={userBox}
-              trigger={trigger}
             />
           ))}
           <AddUser onClick={() => onAddUser()}>Add User</AddUser>
