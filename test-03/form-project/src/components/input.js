@@ -8,10 +8,9 @@ const InputBox = styled.input`
   width: 100%;
   height: 25px;
   box-sizing: border-box;
-  
 `;
 
-function Input({ register, name, type , label }) {
+function Input({ register, name, type, label }) {
   return (
     <>
       <Label htmlFor={name}>{label}</Label>
